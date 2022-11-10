@@ -15,6 +15,7 @@ var CmdJobName = &cobra.Command{
 
 func runJobName(cmd *cobra.Command, args []string) {
 
+	console.Success("this is a job")
 	console.Success("这是一条成功的提示")
 	console.Warning("这是一条提示")
 	console.Error("这是一条错误信息")
