@@ -100,6 +100,26 @@ go run main.go migrate down
 go run main.go migrate reset
 ```
 --- 
+
+### 4. 项目打包成docker
+- 编写dockerfile(该项目已经编写好了，直接构建镜像就可以了)
+
+- 构建镜像
+```go
+docker build -t golaravel:v1 . #golaravel为构建的镜像名称
+```
+- 查看构建的镜像
+```go
+docker images | grep golaravel
+```
+
+- 运行容器
+```go
+# 8082映射到宿主机的端口
+# 3002容器内部启动端口
+docker run -p 8082:3002 -d golaravel:v1
+```
+---
 ### 集成的api
 | **请求方法** | **API 地址** | **说明** |
 | --- | --- | --- |
