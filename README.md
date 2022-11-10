@@ -5,7 +5,7 @@
 
 - 拉取并安装
 ```go
-git clone 
+git clone git@github.com:wangsongqing/GoLaravel.git
 go mod tidy
 ```
 - 修改 .env.example 为 .env
@@ -30,6 +30,23 @@ go run main.go make model [file_name]
 - 生成controllerapi
 ```
 go run main.go make apicontroller [file_name]
+```
+
+- 生成job文件
+```azure
+go run main.go make job job_name
+```
+- 添加子命令到 GoLaravel/app/cmd/job/job.go 
+```go
+func init() {
+	Job.AddCommand(
+		CmdJobName,
+		)
+}
+```
+- 执行job命令
+```azure
+go run main.go job job_name
 ```
 
 

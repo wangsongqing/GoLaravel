@@ -74,6 +74,7 @@ func init() {
 		CmdMakeFactory,
 		CmdMakeSeeder,
 		CmdMakePolicy,
+		CmdMakeJOB,
 	)
 }
 
