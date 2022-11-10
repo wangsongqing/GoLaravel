@@ -49,4 +49,22 @@ func init() {
 go run main.go job job_name
 ```
 
+- 生成console文件
+```go
+go run main.go make console console_name
+```
+
+- 添加子命令到 GoLaravel/app/cmd/console/console.go 
+```go
+func init() {
+	Console.AddCommand(
+		CmdConsoleName,
+	)
+}
+```
+- 执行console命令
+```go
+go run main.go console console_name
+```
+
 

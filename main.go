@@ -2,6 +2,7 @@ package main
 
 import (
 	"GoLaravel/app/cmd"
+	consoleCmd "GoLaravel/app/cmd/console"
 	"GoLaravel/app/cmd/job"
 	"GoLaravel/app/cmd/make"
 	"GoLaravel/bootstrap"
@@ -57,6 +58,7 @@ func main() {
 		cmd.CmdDBSeed,
 		cmd.CmdCache,
 		job.Job,
+		consoleCmd.Console,
 	)
 
 	// 配置默认运行 Web 服务
