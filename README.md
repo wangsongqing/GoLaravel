@@ -32,6 +32,10 @@ go run main.go make model [file_name]
 go run main.go make apicontroller [file_name]
 ```
 
+
+---
+
+
 - 生成job文件
 ```azure
 go run main.go make job job_name
@@ -48,6 +52,9 @@ func init() {
 ```azure
 go run main.go job job_name
 ```
+
+---
+
 
 - 生成console文件
 ```go
