@@ -1,6 +1,17 @@
 # GoLaravel
 ## 基于gin搭建的类似于Laravel的api框架
 
+### 集成的组件
+- MySQL -- 数据库操作
+- Redis -- redis操作
+- zap -- 高新能日志方案
+- Gorm -- 数据库操作
+- Cobra -- 命令行结构
+- limiter -- 限流器
+- Email -- SMTP邮件发送
+- Jwt -- JWT操作
+- 构建docker镜像
+
 ### 1. 运行项目
 
 - 拉取并安装
@@ -12,6 +23,12 @@ go mod tidy
 ```azure
 cp .env.example .env 
 ```
+
+- 新建数据库
+```go
+create database GoLaravel
+```
+
 - 迁移数据库
 ```azure
 go run main.go migrate up
@@ -101,8 +118,8 @@ go run main.go migrate reset
 ```
 --- 
 
-### 4. 项目打包成docker
-- 编写dockerfile(该项目已经编写好了，直接构建镜像就可以了)
+### 4. 项目打包成docker镜像
+- 编写Dockerfile(该项目已经编写好了，直接构建镜像就可以了)
 
 - 构建镜像
 ```go
