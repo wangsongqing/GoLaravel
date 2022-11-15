@@ -1,5 +1,5 @@
 # GoLaravel
-## 基于gin搭建的类似于Laravel的api框架
+## 基于Gin搭建的类似于Laravel的api框架
 
 ### 集成的组件
 - MySQL -- 数据库操作
@@ -46,7 +46,7 @@ go run main.go make model [file_name]
 
 - 生成controllerapi
 ```go
-go run main.go make apicontroller [file_name]
+go run main.go make apicontroller [file_name] (v2/test)
 ```
 
 
