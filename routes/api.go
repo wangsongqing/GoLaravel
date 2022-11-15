@@ -96,7 +96,7 @@ func RegisterAPIRoutes(r *gin.Engine) {
 
 	v2 := r.Group("/v2")
 	{
-		uc := controllersv2user.UserController{}
+		uc := controllersv2user.V2UserController{}
 		userGroup := v2.Group("/user")
 		{
 			userGroup.GET("/:id", middlewareapp.AuthJWT(), uc.GetUser)

@@ -8,11 +8,11 @@ import (
 	"strconv"
 )
 
-type UserController struct {
+type V2UserController struct {
 	v2.BaseAPIController
 }
 
-func (uc *UserController) GetUser(c *gin.Context) {
+func (uc *V2UserController) GetUser(c *gin.Context) {
 	userId, _ := strconv.Atoi(c.Param("id"))
 	userInfo := user.GetUser(userId)
 
