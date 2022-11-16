@@ -55,6 +55,7 @@ go run main.go make apicontroller [file_name] (v2/test)
 
 - 生成job文件
 ```azure
+# 生成文件的路径 /app/cmd/job/
 go run main.go make job job_name
 ```
 - 添加子命令到 GoLaravel/app/cmd/job/job.go 
@@ -75,6 +76,7 @@ go run main.go job job_name
 
 - 生成console文件
 ```go
+# 生成文件的路径 /app/cmd/console/
 go run main.go make console console_name
 ```
 
